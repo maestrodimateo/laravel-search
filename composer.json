@@ -1,0 +1,40 @@
+{
+    "name": "maestrodimateo/laravel-search",
+    "description": "Multi-criteria search trait for Laravel Eloquent models",
+    "type": "library",
+    "version": "1.0.0",
+    "license": "MIT",
+    "require": {
+        "php": "^8.3 || ^8.4",
+        "illuminate/database": "^12.0",
+        "illuminate/support": "^12.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^10.0",
+        "pestphp/pest": "^4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Maestrodimateo\\Search\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Maestrodimateo\\Search\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Maestrodimateo\\Search\\SearchServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    }
+}
